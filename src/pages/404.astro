@@ -8,7 +8,10 @@ import Layout from '../layouts/Layout.astro';
             <div class="hero-content text-center h-24">
                 <h1 class="text-gradient text-center">404</h1>
                 <div class="divider divider-horizontal"></div>
-                <h2>Page Not Found</h2>
+                <div>
+                    <h2>Page Not Found</h2>
+                    <p>Ping <span class="text-dclink">@Minemo</span> if this is an error</p>
+                </div>
             </div>
         </div>
     </main>
@@ -24,6 +27,9 @@ import Layout from '../layouts/Layout.astro';
         font-size: 2rem;
         font-weight: 400;
         margin: 0;
+    }
+    .text-dclink {
+        color: #FEF9EF;
     }
     .text-gradient {
 		background-image: var(--accent-gradient);

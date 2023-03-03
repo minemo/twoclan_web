@@ -16,9 +16,12 @@ import sitemap from "@astrojs/sitemap";
 import compress from "astro-compress";
 
 // https://astro.build/config
+import svelte from "@astrojs/svelte";
+
+// https://astro.build/config
 export default defineConfig({
-  site:"https://thewildoutcasts.demo",
-  integrations: [tailwind(), image(), sitemap(), compress()],
+  site: "https://thewildoutcasts.demo",
+  integrations: [tailwind(), image(), sitemap(), compress(), svelte()],
   output: "server",
   adapter: vercel()
 });
