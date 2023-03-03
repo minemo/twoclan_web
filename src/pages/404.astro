@@ -1,0 +1,35 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="The Wild Outcasts Clan">
+    <main>
+        <div class="hero min-h-screen bg-base-100">
+            <div class="hero-content text-center h-24">
+                <h1 class="text-gradient text-center">404</h1>
+                <div class="divider divider-horizontal"></div>
+                <h2>Page Not Found</h2>
+            </div>
+        </div>
+    </main>
+</Layout>
+
+<style>
+    h1 {
+		font-size: 4rem;
+		font-weight: 800;
+		margin: 0;
+	}
+    h2 {
+        font-size: 2rem;
+        font-weight: 400;
+        margin: 0;
+    }
+    .text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+</style>

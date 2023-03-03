@@ -10,8 +10,15 @@ import image from "@astrojs/image";
 import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
+import sitemap from "@astrojs/sitemap";
+
+// https://astro.build/config
+import compress from "astro-compress";
+
+// https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), image()],
+  site:"https://thewildoutcasts.demo",
+  integrations: [tailwind(), image(), sitemap(), compress()],
   output: "server",
   adapter: vercel()
 });
